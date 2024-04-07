@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Strike a pose!</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+<script defer type="module" src="./script.js"></script>
+
+<body>
+<section>
+  <h1>MediaPipe simplified Webcam bodypose example</h1>
+  <button id="webcamButton">Loading Pose Model...</button>
+  <button id="saveLocal">Save data...</button>
+  <select id="poseList"></select>
+  <button id="poseAdd">Add new pose</button>
+  <button id="poseLoad">Load poses</button>
+  <button id="poseDownload">Export poses as JSON</button>
+  <button id="poseRecord">Record poses</button>
+
+
+
+
+
+
+</section>
+<section id="liveView" class="videoView">
+  <video id="webcam" style="width: 1280px; height: 720px; position: absolute" autoplay playsinline muted></video>
+  <canvas class="output_canvas" id="output_canvas" width="1280" height="720" style="position: absolute; left: 0px; top: 0px;"></canvas>
+</section>
+<!-- partial -->
+
+</body>
+</html>
